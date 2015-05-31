@@ -14,3 +14,11 @@ class MeetupList(generics.ListCreateAPIView):
 class MeetupDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Meetup.objects.all()
     serializer_class = MeetupSerializer
+
+class ImageList(generics.ListCreateAPIView):
+    queryset = Image.objects.all()
+    serializer_class = ImageSerializer
+
+class ImageDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Image.objects.all()
+    serializer_class = ImageSerializer
